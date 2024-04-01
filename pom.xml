@@ -33,35 +33,33 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		<!-- PostgreSQL Dependency -->
 		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
-			<version>42.2.24</version> <!-- Adjust version if needed -->
 		</dependency>
-
-		<!-- Spring Data JPA Dependency -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
-
-		<dependency>
+	   <!-- This is the older version than com.graphql-java-kickstart-->
+		<!--<dependency>
 			<groupId>com.graphql-java</groupId>
 			<artifactId>graphql-spring-boot-starter</artifactId>
 			<version>5.0.2</version>
-		</dependency>
-		<!-- This dependency used for only Testing and Development-->
+		</dependency>-->
+		<!-- it is transtivily avaialble in the springboot-starter graphql-->
+		<!--<dependency>
+			<groupId>com.graphql-java</groupId>
+			<artifactId>graphql-java</artifactId>
+		</dependency>-->
+		<!-- This dependency used for only Testing and Development, In production comment this and enable GraphQL-spring dependency-->
 		<dependency>
 			<groupId>com.graphql-java</groupId>
 			<artifactId>graphiql-spring-boot-starter</artifactId>
 			<version>5.0.2</version>
 			<scope>runtime</scope>
 		</dependency>
-		<dependency>
-			<groupId>com.graphql-java</groupId>
-			<artifactId>graphql-java</artifactId>
-		</dependency>
+		<!-- Keep this on Production, Not required in testing and development, graphIql is takes care on lower environment-->
 		<dependency>
 			<groupId>com.graphql-java-kickstart</groupId>
 			<artifactId>graphql-spring-boot-starter</artifactId>
