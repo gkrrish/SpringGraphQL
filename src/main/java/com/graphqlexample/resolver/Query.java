@@ -1,4 +1,4 @@
-package com.graphqlexample.component;
+package com.graphqlexample.resolver;
 
 import java.util.List;
 
@@ -11,7 +11,7 @@ import com.graphqlexample.repository.EmployeeRepository;
 import graphql.kickstart.tools.GraphQLQueryResolver;
 
 @Component
-public class QueryResolver implements GraphQLQueryResolver {
+public class Query implements GraphQLQueryResolver {
 	@Autowired
 	private EmployeeRepository employeeRepository;
 
