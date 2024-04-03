@@ -86,4 +86,5 @@ public class Employee {
 		return new Employee(-1L, "Unknown", 0, "Unknown Department");
 	}
 
-}
+}//latest version we can use the record class also which is available later JAVA -14 versions, record class nothing but entity class but no need to 
+//write setters and getters explicitly

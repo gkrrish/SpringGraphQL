@@ -4,7 +4,6 @@ type Employee {
     age: Int!
     department: String!
 }
-
 type Query {
     hello: String
     getAllEmployees: [Employee]

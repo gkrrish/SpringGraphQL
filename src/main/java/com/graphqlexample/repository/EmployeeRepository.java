@@ -7,5 +7,4 @@ import com.graphqlexample.entity.Employee;
 
 @Repository
 public interface EmployeeRepository  extends JpaRepository<Employee, Long>{
-
 }

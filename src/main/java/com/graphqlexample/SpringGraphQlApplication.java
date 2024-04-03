@@ -13,5 +13,4 @@ public class SpringGraphQlApplication{
 		
 		System.out.println("http://localhost:8286/graphiql?path=/graphql");
 	}
-
 }

@@ -48,5 +48,4 @@ public class EmployeeController {
 	public String addEmployee(Employee employee) {
 		return employeeService.addEmployee(employee);
 	}
-
 }

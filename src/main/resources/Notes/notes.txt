@@ -6,3 +6,10 @@ https://pankaj02.medium.com/spring-for-graphql-schemamapping-and-querymapping-3d
 https://github.com/techdozo/graphql-spring-annotation.git
 https://www.geeksforgeeks.org/writing-and-executing-queries-in-graphql/
 
+https://wso2.com/graphql-apis/
+
+if you want to create the sub-endpoints then use the different controllers
+
+graphql/employee----->employee controller
+graphql/person-------> person controller
+

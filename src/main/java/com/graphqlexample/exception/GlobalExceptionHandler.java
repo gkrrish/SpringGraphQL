@@ -15,7 +15,6 @@ public class GlobalExceptionHandler {
     public ErrorResponse handleSQLException(SQLException ex) {
         return new ErrorResponse("Database is not connected");
     }
-
     static class ErrorResponse {
         private String message;
 
