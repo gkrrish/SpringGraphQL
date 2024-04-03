@@ -18,6 +18,19 @@ public class EmployeeController {
 	@Autowired
 	EmployeeService employeeService;
 
+	@QueryMapping
+	public String hello() {
+		return "Hello GraphQL!";
+	}
+
+	public Iterable<Employee> getAllEmployees() {
+		return employeeService.getAllEmployees();
+	}
+
+	public Employee getEmployeeById(Long id) {
+		return employeeService.getEmployeeById(id);
+	}
+
 	@QueryMapping()
 	public List<Employee> getEmployees() {
 		return employeeService.getEmployees().orElse(Collections.emptyList());
