@@ -1,5 +1,6 @@
 package com.graphqlexample.sevice;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -28,6 +29,24 @@ public class EmployeeService {
 		return (savedEmployee != null && savedEmployee.getId() != null)
 				? "Employee added successfully with ID : " + savedEmployee.getId()
 				: "employee not saved";
+	}
+
+	public Iterable<Employee> getAllEmployees() {
+		List<Employee> testEmployee=new ArrayList<>();
+		testEmployee.add(new Employee(100l, "someName", 12, "CSE"));
+		return testEmployee;
+	}
+
+	public Employee getEmployeeById(Long id) {
+		Employee testEmployee=new Employee();
+		testEmployee.setAge(12);
+		testEmployee.setDepartment("ECE");
+		testEmployee.setId(10L);
+		testEmployee.setName("Krishna");
+		if(id==10) {
+			return testEmployee;
+		}
+		return new Employee(13L, "DummyName", 13, "Mechanical");
 	}
 
 }

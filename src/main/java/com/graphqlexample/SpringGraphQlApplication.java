@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"com.graphqlexample", "com.graphqlexample.component", "com.graphqlexample.repository"})
+@ComponentScan(basePackages = {"com.graphqlexample"})
 public class SpringGraphQlApplication{
 
 	public static void main(String[] args) {
