@@ -10,6 +10,8 @@ public class SpringGraphQlApplication{
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringGraphQlApplication.class, args);
+		
+		System.out.println("http://localhost:8286/graphiql?path=/graphql");
 	}
 
 }
