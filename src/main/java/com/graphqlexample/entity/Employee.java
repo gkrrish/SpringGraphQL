@@ -82,4 +82,8 @@ public class Employee {
 				&& Objects.equals(name, other.name);
 	}
 
+	public static Employee emptyEmployee() {
+		return new Employee(-1L, "Unknown", 0, "Unknown Department");
+	}
+
 }
